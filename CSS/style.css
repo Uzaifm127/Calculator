@@ -79,6 +79,7 @@ body {
 .keysBtn:nth-child(16) {
   grid-row: 4/6;
   grid-column: 4/5;
+  background: #f1ff77;
 }
 
 .keysBtn:hover {
