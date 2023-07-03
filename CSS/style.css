@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+#calculator {
+  border-radius: 2vmax;
+  background: #f2f2f2;
+  padding: 2vmax 2vmax;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output {
+  width: 100%;
+  height: 6.5vmax;
+  display: flex;
+  flex-direction: column;
+  background: #444;
+  margin-bottom: 2vmax;
+  border-radius: 1vmax;
+  padding: 1vmax;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.outputCalc,
+.outputRes {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5vmax;
+  color: white;
+}
+
+.outputCalc {
+  font-size: 2vmax;
+}
+
+.outputRes {
+  color: #ffac33;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 5vw);
+  grid-template-rows: repeat(5, 5vw);
+  grid-gap: 5px;
+}
+
+.keysBtn {
+  cursor: pointer;
+  display: flex;
+  font-size: 2vmax;
+  background: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vmax;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+  transition: all 200ms ease;
+}
+
+.keysBtn:nth-child(16) {
+  grid-row: 4/6;
+  grid-column: 4/5;
+}
+
+.keysBtn:hover {
+  background: #e6e6e6;
+}
+
+.operator {
+  background: #ffac33;
+  color: white;
+}
+
+.neomorphic .keysBtn:hover {
+  background: #e6e6e6;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
+    -2px -2px 4px rgba(255, 255, 255, 0.5);
+}
