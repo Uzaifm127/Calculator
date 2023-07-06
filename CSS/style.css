@@ -96,3 +96,21 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
     -2px -2px 4px rgba(255, 255, 255, 0.5);
 }
+
+.watermark-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  pointer-events: none;
+}
+
+.watermark {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
